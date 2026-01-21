@@ -1,0 +1,54 @@
+h1{
+    float: left;}
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /*background-position: top,right;
+    align-items: flex-start;*/
+    font-size: 25px;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;}
+
+a{
+    margin-right: 30px;
+    text-decoration: none;
+    color:cornflowerblue;
+    font-size: 25px;}
+
+.home{
+    display: flex;
+    gap: 7px;}
+
+.service{
+    display: flex;
+    gap: 7px;}
+.booking{
+    display: flex;
+    gap: 7px;}
+
+#star{
+    /*text-align: center;
+    transition: all;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 0%;
+    border-color: rgb(75, 73, 73);
+    border-radius: 5px;*/
+    background-color: rgb(222, 221, 221);
+    height: 1pc;
+    width: 245px;}
+
+h3{
+    clear: both;
+}
+
+#doctors{
+    size: 20px;
+    float: left;
+}
+div p{
+    float: left;
+}
