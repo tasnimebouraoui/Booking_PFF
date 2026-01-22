@@ -1,22 +1,23 @@
 h1{
     float: left;}
 nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px darkgray;
     float: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
     /*background-position: top,right;
     align-items: flex-start;*/
-    font-size: 25px;
-    gap: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;}
+    font-size: 22px;
+    /*gap: 25px;*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 a{
     margin-right: 30px;
     text-decoration: none;
-    color:cornflowerblue;
-    font-size: 25px;}
+    color:rgb(72, 70, 70);
+    font-size: 22px;}
 
 .home{
     display: flex;
@@ -28,6 +29,12 @@ a{
 .booking{
     display: flex;
     gap: 7px;}
+.contact{
+    display: flex;
+    gap: 6px;}
+.feedback{
+    display: flex;
+    gap: 6px;}
 
 #star{
     /*text-align: center;
@@ -37,7 +44,7 @@ a{
     margin-top: 0%;
     border-color: rgb(75, 73, 73);
     border-radius: 5px;*/
-    background-color: rgb(222, 221, 221);
+    background-color:cornflowerblue;
     height: 1pc;
     width: 245px;}
 
