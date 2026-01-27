@@ -48,36 +48,145 @@ a{
     display: flex;
     gap: 6px;}
 
-.logo{
-    margin-right: auto;}
-span{
-    color: rgb(72, 119, 207);}   
-.star{
+#logo{
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: fluo1;}
+
+#logo .star1{
     /*text-align: center;
     transition: all;
     padding: 10px;
     margin: 5px;
     margin-top: 0%;
-    border-color: rgb(75, 73, 73);*/
-    margin-right:auto ;
-    display: flex;
-    align-items:baseline;
-    background-color:cornflowerblue;
-    height: 1pc;
-    width: 245px;}
+    border-color: rgb(75, 73, 73);
+    margin-right:auto ;*/
+    grid-area: fluo1;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(186, 183, 183);
+    height: 30px;
+    width: 250px;}
 
-#image_box{
+#logo h1{
+    grid-area: fluo1;}
+
+#image_box{/* lgrid bkolou*/
     display: grid;
-    grid-template-columns: auto,1fr;
+    grid-template-columns: 1fr,auto;
     grid-template-rows: auto,1fr,auto;
     grid-template-areas: 
-    "image title"
-    "image west"
-    "image bouton";
+    "title title_img"
+    "west image"
+    "bouton image";}
+
+#image_box #imgs #title_img{ /*hedhi mtaa stay safe bch naksamha ala satrin w nhighliti safe w healthy*/
+    grid-area: title_img;
+    color: rgb(46, 45, 64);
+    font-size: 60px;
+    font-family:'cursive';
+    word-spacing: 4px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first_half"
+    "second_half";}
+
+#image_box #imgs #title_img #safe{
+    grid-area: first_half;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: fluo2;
+    height: 80px;
+    }
+
+#image_box #imgs #title_img #safe #part1{
+    margin-left: 0px; 
+    margin-top: 0px;
+    grid-area: fluo2;
+    font-family: fantasy;}
+
+#image_box #imgs #title_img #safe #high1{
+    margin-left: 0px; 
+    margin-top: 0px;
+    grid-area: fluo2;
+    color:black ;}
+
+#image_box #imgs #title_img .white{
+    background-color: white;
 }
-img{
-    grid-area: image;
+
+#image_box #imgs #title_img #healthy{
+
+    grid-area: second_half;
+    margin-left: auto;
+    
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: fluo3;
+    height: 80px;}
+
+#image_box #imgs #title_img #healthy #part2{
+    margin-top: 0px;
+    grid-area: fluo3;
+    font-family: fantasy;}
+
+#image_box #imgs #title_img #healthy #high2{
+    margin-top: 0px;
+    grid-area: fluo2;
+    color:black ;}
+
+
+#image_box #imgs #title_img #high1{
+    height: 40px;
+    width: 240px;
+    background-color: rgb(168, 224, 224);}
+
+#image_box #imgs #title_img #high2{
+    height: 40px;
+    width: 310px;
+    background-color: rgb(168, 224, 224);}
+
+#image_box #imgs #title_img #healthy{
+    grid-area: second_half;
 }
+
+
+#image_box #imgs #doctors{/*ltaswira*/
+        grid-area: image;
+        border-radius: 15px;}
+
+/*tawa partie description li alisar*/
+#image_box #description h1{
+    grid-area: title;
+    text-align: center;}
+
+#image_box #description #content{
+    grid-area: west;
+    /*height: max-content;
+    text-align: center;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    font-family:'Times New Roman', Times, serif;
+    color: gray;
+    font-size: 20px;}
+
+#image_box #description a button{
+    grid-area: bouton;
+    /*height: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/}
+h1 span{
+    color: rgb(11, 34, 77);
+}
+.cornflower{
+    color: rgb(67, 105, 176);
+}
+
 /*#description{
     grid-area: texte;
     border: 8px,solid,black;
@@ -89,29 +198,3 @@ img{
     "west"
     "bouton";
 }*/
-
-#description h1{
-    grid-area: title;
-    text-align: center;
-    color: rgb(130, 127, 127);}
-#description p{
-    grid-area: west;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font: bolder;
-    text-align: center;
-    font-size: 27px;
-}
-#description div{
-    grid-area: bouton;
-    box-sizing: 10px,8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#doctors{
-   grid-area: image;
-
-}
